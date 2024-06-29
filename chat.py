@@ -12,10 +12,10 @@ def create_insecure_client():
 
 def chat(user_input):
     client = OpenAI(
-        # #将这里换成你在aihubmix api keys拿到的密钥
+        # api_key="XXX",
+        # base_url="https://aihubmix.com/v1",
         api_key="XXX",
-        # 这里将官方的接口访问地址，替换成aihubmix的入口地址
-        base_url="https://aihubmix.com/v1",
+        base_url="https://free.gpt.ge/v1/",
         http_client=create_insecure_client()
     )
 
